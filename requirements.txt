@@ -1,0 +1,9 @@
+attrs==23.2.0
+colorama==0.4.6
+coverage==7.4.4
+iniconfig==2.0.0
+packaging==24.0
+pluggy==1.4.0
+pytest==8.1.1
+pytest-cov==5.0.0
+requests==2.31.0
