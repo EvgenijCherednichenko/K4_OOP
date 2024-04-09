@@ -1,62 +1,21 @@
 [
     {
-        "name": "Ведущий бизнес-аналитик",
-        "url": "https://api.hh.ru/vacancies/94823967?host=hh.ru",
-        "salary": {
-            "from": 300000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false
-        },
+        "name": "Главный специалист",
+        "url": "https://api.hh.ru/vacancies/96497148?host=hh.ru",
+        "salary": null,
         "description": null,
-        "requirements": "Желание развиваться в данном направлении. Умение принимать самостоятельные решения. Будет плюсом: Знание языка программирования (<highlighttext>Python</highlighttext>). Опыт работы с Web данными."
-    },
-    {
-        "name": "Аналитик данных (SQL / Excel / Power BI)",
-        "url": "https://api.hh.ru/vacancies/95150405?host=hh.ru",
-        "salary": {
-            "from": 70000,
-            "to": 100000,
-            "currency": "RUR",
-            "gross": true
-        },
-        "description": null,
-        "requirements": "Мы ищем специалиста, у которого есть опыт построения систем сквозной аналитики от учёта переходов на сайт до закрытых сделок в..."
-    },
-    {
-        "name": "Junior Python разработчик",
-        "url": "https://api.hh.ru/vacancies/96034351?host=hh.ru",
-        "salary": {
-            "from": 50000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false
-        },
-        "description": null,
-        "requirements": "<highlighttext>Python</highlighttext>. Асинхронное программирование. Знание минимум 1 веб фреймворка. Знание минимум 1 БД и 1 ORM. HTTP И REST. GIT. "
-    },
-    {
-        "name": "Python Backend Developer (Python FastAPI)",
-        "url": "https://api.hh.ru/vacancies/95840747?host=hh.ru",
-        "salary": {
-            "from": 200000,
-            "to": 350000,
-            "currency": "KZT",
-            "gross": false
-        },
-        "description": null,
-        "requirements": "Знания и опыт в профильных технологиях: <highlighttext>Python</highlighttext>, FastAPI, SQLalchemy, Pytest. Kafka (теоретические знания о технологии). Готовность ездить в офис(иногда);​​​​​​​. "
+        "requirements": "Навыки обработки, анализа и визуализации данных при помощи BI инструментов (Power BI, Apache Superset) или языков программирования (R и <highlighttext>Python</highlighttext>). – "
     },
     {
         "name": "Стажер-разработчик Python",
-        "url": "https://api.hh.ru/vacancies/95989169?host=hh.ru",
+        "url": "https://api.hh.ru/vacancies/94354526?host=hh.ru",
         "salary": {
-            "from": 2400,
-            "to": null,
-            "currency": "BYR",
-            "gross": true
+            "from": 100000,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false
         },
         "description": null,
-        "requirements": "Не важен опыт, важно стремление к постоянному росту и мотивация. Rest/Fast/GraphQL Api + умение пользоваться док-ей, SQL..."
+        "requirements": "Мы ищем <highlighttext>Python</highlighttext>-разработчика, уровнем от Junior и выше, желательно с опытом развития новых продуктов. Уверенные знания <highlighttext>Python</highlighttext> 3.8..."
     }
 ]
