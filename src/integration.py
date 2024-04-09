@@ -5,7 +5,20 @@ from .settings import settings
 
 
 class VacancyParser(abc.ABC):
-    ...
+    """
+    Abstract base class for vacancy parsers.
+    """
+
+    @abc.abstractmethod
+    def get_vacancies(self):
+        """
+        Method to be implemented by subclasses to retrieve vacancies.
+
+        Returns:
+        List: A list of vacancies retrieved by the parser.
+        """
+
+        pass
 
 
 class HHVacancyParser(VacancyParser):
@@ -32,6 +45,7 @@ class HHVacancyParser(VacancyParser):
 
 
 class Vacancy:
+    __slots__ = ('name', '_url', 'salary', 'description', 'requirements')
 
     def __init__(
             self, name: str, url: str | None = "",
@@ -39,7 +53,7 @@ class Vacancy:
             description: str | None = "", requirements: str | None = ""
     ):
         self.name = name
-        self.url = url
+        self._url = url
         self.salary = salary
         self.description = description
         self.requirements = requirements
@@ -126,7 +140,7 @@ class Vacancy:
         filtered_vacancies = []
         for vacancy in vacancies:
             if (not name or vacancy.name == name) and \
-                    (not url or vacancy.url == url) and \
+                    (not url or vacancy._url == url) and \
                     cls.is_filter_by_salary(salary_filter_value=salary, vacancy_salary=vacancy.salary) and \
                     (not description or vacancy.description == description) and \
                     (not requirements or vacancy.requirements == requirements):
@@ -148,7 +162,7 @@ class Vacancy:
 
         return {
             "name": vacancy.name,
-            "url": vacancy.url,
+            "url": vacancy._url,
             "salary": vacancy.salary,
             "description": vacancy.description,
             "requirements": vacancy.requirements
@@ -167,3 +181,25 @@ class Vacancy:
         """
 
         return [cls.serialized_vacancy(vacancy) for vacancy in vacancies]
+
+    def __gt__(self, other):
+
+        """Метод сравнения вакансий между собой по зарплате и валидации данных по зарплате"""
+
+        if self.salary is not None and other.salary is not None:
+            if self.salary['to'] > other.salary['to']:
+                return self
+            else:
+                return other
+        return 'Зарплата не указана'
+
+    def __lt__(self, other):
+
+        """Метод сравнения вакансий между собой по зарплате и валидации данных по зарплате"""
+
+        if self.salary is not None and other.salary is not None:
+            if self.salary['to'] < other.salary['to']:
+                return self
+            else:
+                return other
+        return 'Зарплата не указана'

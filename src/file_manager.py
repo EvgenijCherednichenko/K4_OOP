@@ -18,15 +18,15 @@ class BaseFileManager(abc.ABC):
 
     @abc.abstractmethod
     def save(self, data):
-        ...
+        pass
 
     @abc.abstractmethod
     def add_object(self, data):
-        ...
+        pass
 
     @abc.abstractmethod
     def delete_object(self, data):
-        ...
+        pass
 
 
 class JsonFileManager(BaseFileManager):
@@ -132,3 +132,4 @@ class CsvFileManager(BaseFileManager):
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
+
