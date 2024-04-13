@@ -1,12 +1,5 @@
 [
     {
-        "name": "Главный специалист",
-        "url": "https://api.hh.ru/vacancies/96497148?host=hh.ru",
-        "salary": null,
-        "description": null,
-        "requirements": "Навыки обработки, анализа и визуализации данных при помощи BI инструментов (Power BI, Apache Superset) или языков программирования (R и <highlighttext>Python</highlighttext>). – "
-    },
-    {
         "name": "Стажер-разработчик Python",
         "url": "https://api.hh.ru/vacancies/94354526?host=hh.ru",
         "salary": {
@@ -17,5 +10,19 @@
         },
         "description": null,
         "requirements": "Мы ищем <highlighttext>Python</highlighttext>-разработчика, уровнем от Junior и выше, желательно с опытом развития новых продуктов. Уверенные знания <highlighttext>Python</highlighttext> 3.8..."
+    },
+    {
+        "name": "Главный специалист",
+        "url": "https://api.hh.ru/vacancies/96497148?host=hh.ru",
+        "salary": null,
+        "description": null,
+        "requirements": "Навыки обработки, анализа и визуализации данных при помощи BI инструментов (Power BI, Apache Superset) или языков программирования (R и <highlighttext>Python</highlighttext>). – "
+    },
+    {
+        "name": "Программист",
+        "url": "https://api.hh.ru/vacancies/96354500?host=hh.ru",
+        "salary": null,
+        "description": null,
+        "requirements": "Можно без опыта."
     }
 ]
