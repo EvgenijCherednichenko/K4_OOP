@@ -1,7 +1,5 @@
 from src.integration import HHVacancyParser, Vacancy
 from src.file_manager import JsonFileManager
-from src.logger import log_data
-
 
 def get_vacancies():
     hh_api = HHVacancyParser()
@@ -27,7 +25,7 @@ def get_vacancies():
     file_manager = JsonFileManager("vacancies.json")
     file_manager.save(serialized_vacancies)
 
-    log_data(serialized_vacancies)
+    print(serialized_vacancies)
 
 
 if __name__ == "__main__":
